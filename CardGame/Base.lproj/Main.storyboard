@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7LF-nr-pZ5">
+                                <rect key="frame" x="49" y="71" width="316" height="630.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-W3-Jh0" userLabel="Stack Game">
+                                        <rect key="frame" x="50" y="0.0" width="216" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YZ Card Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9D-bp-VgT">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" red="0.36936625227280401" green="0.11752562541106634" blue="0.3881067576142132" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="systemYellowColor"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Je9-Hs-Ggt" userLabel="Stack Player1">
+                                        <rect key="frame" x="124.5" y="54" width="67.5" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-K3-t5q">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.26055261492729187" green="0.10759785872057807" blue="0.25727869207679666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-CQ-M5t" userLabel="Stack Cards1">
+                                        <rect key="frame" x="0.0" y="90" width="316" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="MyH-NF-HZZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-uj-5Ev">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="200"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="73M-Um-hih">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ole-m4-cUn" userLabel="Stack Player2">
+                                        <rect key="frame" x="123" y="302" width="70" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN6-nd-ZDN">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.26055261489999998" green="0.10759785869999999" blue="0.25727869209999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" distribution="fillEqually" alignment="center" spacing="8" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qq7-cz-qju" userLabel="Stack Cards2">
+                                        <rect key="frame" x="0.0" y="338" width="316" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="6GY-60-bZo">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="9O6-qK-4MS">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="200"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="200" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="200" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="200" image="purple_back" translatesAutoresizingMaskIntoConstraints="NO" id="azv-hF-h9c">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sln-Aw-ik5" userLabel="Stack Winner">
+                                        <rect key="frame" x="76.5" y="550" width="163" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Winner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxd-Bh-iYy">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <size key="shadowOffset" width="1" height="-1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aNo-Y8-R3T" userLabel="Stack Play">
+                                        <rect key="frame" x="129" y="593" width="58" height="37.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0V-ng-3nH">
+                                                <rect key="frame" x="0.0" y="4" width="58" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                                <color key="tintColor" red="0.3777222406110477" green="0.17872518877030574" blue="0.57298937182741116" alpha="0.2013056506849315" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="PLAY" backgroundImage="bolt.horizontal.fill" catalog="system">
+                                                    <color key="titleColor" red="0.40260101453142866" green="0.19236325362020476" blue="0.62513880076142136" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleShadowColor" systemColor="tertiaryLabelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlU-t0-n0z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7LF-nr-pZ5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="27" id="4Qv-tm-ePg"/>
+                            <constraint firstItem="7LF-nr-pZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="P7i-gt-Mbr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7LF-nr-pZ5" secondAttribute="trailing" constant="29" id="kGT-pM-wJu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayWinner" destination="Pxd-Bh-iYy" id="OVi-OQ-0Lw"/>
+                        <outlet property="p1_card1" destination="MyH-NF-HZZ" id="H1k-hS-gkm"/>
+                        <outlet property="p1_card2" destination="OKn-uj-5Ev" id="hfr-os-3gy"/>
+                        <outlet property="p1_card3" destination="73M-Um-hih" id="err-Eq-aTu"/>
+                        <outlet property="p2_card1" destination="6GY-60-bZo" id="7Bc-R5-BOs"/>
+                        <outlet property="p2_card2" destination="9O6-qK-4MS" id="MDO-gz-4He"/>
+                        <outlet property="p2_card3" destination="azv-hF-h9c" id="hvZ-Zi-Tbi"/>
+                        <outlet property="playButton" destination="P0V-ng-3nH" id="GGw-bq-CzK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bolt.horizontal.fill" catalog="system" width="128" height="60"/>
+        <image name="purple_back" width="172.5" height="264"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
