@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             //if response.result.isSuccess{
             switch response.result {
                 case .success:
-                    guard let jsonString = response.result.value else { return }
+                    guard let jsonString = response.data else { return }
                     guard let stockJSON : [JSON] = JSON(jsonString).array else { return }
                     
                     if stockJSON.count < 1 { return }
